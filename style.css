@@ -30,3 +30,9 @@
     width: 717px;
     height: 123px;
 }
+/*corps*/
+#phrase{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
