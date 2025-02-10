@@ -1,9 +1,18 @@
+ .contenair{
+    height: 1032px;
+ }
  /*tête de page*/
 .tete_de_page{
     display: flex;
     flex-direction: row;
     height: 76px;
     justify-content: space-between;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    background-color: #fff; 
+    z-index: 1000; 
 }
 #logocr{
     height: 76px;
@@ -23,10 +32,15 @@
     background-size: cover;
 }
 .titre{
+    margin-top: 100px;
+    margin-left: 100px;
     width: 533px;
     height: 110px;
+    display: flex;
+    align-items: flex-end;
 }
 .sous-titre{
+    margin-left: 100px;
     width: 717px;
     height: 123px;
 }
@@ -34,5 +48,48 @@
 #phrase{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+#vestiboutique{
+    width: 211px;
+    height: 192px;
+}
+#Brocante{
+    width: 226px;
+    height: 151px;
+}
+#Formations{
+    width: 242px;
+    height: 127px;
+}
+#activites3{
+    display: flex;
+    justify-content: space-around;
+}
+.Halte_Repit{
+    display: flex;
+    justify-content:center;
+}
+#Halte_Repit{
+    width: 478px;
+    height: 159px;
+}
+#titreP{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+#textP{
+    display: flex;
+    justify-content: center;
+}
+#voir-plus{
+    width: auto;
+    height: 60px;
+    margin-top: 100px;
+    object-fit: cover;
+}
+.voir-plus{
+    display: flex;
     justify-content: center;
 }
