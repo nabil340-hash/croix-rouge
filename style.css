@@ -1,0 +1,17 @@
+.tete_de_page{
+    display: flex;
+    flex-direction: row;
+    height: 77px;
+}
+#logocr{
+    height: 76px;
+    width: 292px;
+    object-fit: cover;
+}
+.bouton_tete_de_page{
+    display: flex;
+    justify-content: flex-end;
+}
+h2{
+    margin: 25px;
+}
