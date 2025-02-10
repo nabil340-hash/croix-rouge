@@ -93,3 +93,9 @@
     display: flex;
     justify-content: center;
 }
+/*footer*/
+.bas-de-page{
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+}
