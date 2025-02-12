@@ -1,81 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unité local Croix-Rouge Romilly Sur Seine</title>
+    <title>Unité locale Croix-Rouge Romilly Sur Seine</title>
+    <!-- Lien vers la feuille de style Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="contenair">
-    <header class="tete_de_page">
-        <img src="400x400_-croix-rouge-logo (3).svg" alt="logo de la croix rouge" id="logocr">
-        <div class="bouton_tete_de_page">
-            <h2><a href="https://redesigned-memory-q74xv5455vrgc99g4-5500.app.github.dev/"><button class="boutonh">Accueil</a></button></h2>
-            <h2><a href="https://redesigned-memory-q74xv5455vrgc99g4-5500.app.github.dev/Notre%20mission/"><button class="boutonh">Notre mission</a></button></h2>
-            <h2><a href="https://redesigned-memory-q74xv5455vrgc99g4-5500.app.github.dev/Contact%20et%20localisation/"><button class="boutonh">Contact & localisation</a></button></h2>
+    <header class="tete_de_page fixed-top bg-white">
+        <div class="container-fluid d-flex justify-content-between align-items-center py-3">
+            <!-- Logo -->
+            <img src="https://www.francegenerosites.org/wp-content/uploads/400x400_-croix-rouge-logo.jpg" alt="logo de la croix rouge" id="logocr" class="img-fluid">
+    
+            <!-- Navigation (Boutons) -->
+            <div class="bouton_tete_de_page d-flex gap-3">
+                <h2><a href="https://redesigned-memory-q74xv5455vrgc99g4-5500.app.github.dev/" class="btn btn-link">Accueil</a></h2>
+                <h2><a href="https://redesigned-memory-q74xv5455vrgc99g4-5500.app.github.dev/Notre%20mission/" class="btn btn-link">Notre mission</a></h2>
+                <h2><a href="https://redesigned-memory-q74xv5455vrgc99g4-5500.app.github.dev/Contact%20et%20localisation/" class="btn btn-link">Contact & localisation</a></h2>
+            </div>
         </div>
     </header>
-    <div class="mise_en_avant">
-        <div class="titre">
-            <h2>Unité locale de Romilly-Sur -Seine :</h2>
-        </div>
-        <div class="sous-titre">
-            <h2> L’unité locale de la Croix-Rouge s’engage chaque jour pour venir en aide aux plus vulnérables à travers
-                des actions de secours, de solidarité et de formation.</h2>
-        </div>
-    </div>
-    <div id="phrase">
-        <h2>
-            L’unité locale de la Croix-Rouge de Romilly-sur-Seine met en place plusieurs actions solidaires pour venir
-            en aide à la population et répondre aux besoins de chacun.
-        </h2>
-    </div>
-    <div id="activites3">
-        <div id="vestiboutique">
-            <h2>Vestiboutique :</h2>
-            <p>
-                Un espace de récupération, de tri et de revente d’habits à petits prix.Cet espace est ouvert à tout le
-                monde et permet ainsi de participer à une action de solidarité.
-            </p>
-        </div>
-        <div id="Brocante">
-            <h2>Brocante :</h2>
-            <p>
-                Un espace où l’on trouve différents objets (meubles, vaisselles et autres matériels pour la maison),
-                ceci permettant d’aider les personnes dans le besoin dans leur vie quotidienne.
-            </p>
-        </div>
-        <div id="Formations">
-            <h2>Formations :</h2>
-            <p>
-                Des sessions ouvertes à tous pour apprendre les gestes qui sauvent et être prêt à réagir face aux
-                situations d’urgence.</p>
+    
+
+    <!-- Mise en avant -->
+    <div class="mise_en_avant w-100" style="background-image: url('images/istockphoto-1394122245-612x612 (1).jpg'); background-size: cover;">
+        <div class="container text-center text-white py-5">
+            <h2 class="titre">Unité locale de Romilly-Sur-Seine :</h2>
+            <h3 class="sous-titre">L’unité locale de la Croix-Rouge s’engage chaque jour pour venir en aide aux plus vulnérables à travers des actions de secours, de solidarité et de formation.</h3>
         </div>
     </div>
-    <div class="Halte_Repit">
-        <div id="Halte_Repit">
+
+    <!-- Description des activités -->
+    <div id="phrase" class="text-center py-5">
+        <h2>L’unité locale de la Croix-Rouge de Romilly-sur-Seine met en place plusieurs actions solidaires pour venir en aide à la population et répondre aux besoins de chacun.</h2>
+    </div>
+
+    <!-- Activités -->
+    <div id="activites3" class="container py-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div id="vestiboutique" class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Vestiboutique</h5>
+                        <p class="card-text">Un espace de récupération, de tri et de revente d’habits à petits prix. Cet espace est ouvert à tout le monde et permet ainsi de participer à une action de solidarité.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="Brocante" class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Brocante</h5>
+                        <p class="card-text">Un espace où l’on trouve différents objets (meubles, vaisselles et autres matériels pour la maison), ceci permettant d’aider les personnes dans le besoin dans leur vie quotidienne.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="Formations" class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Formations</h5>
+                        <p class="card-text">Des sessions ouvertes à tous pour apprendre les gestes qui sauvent et être prêt à réagir face aux situations d’urgence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Halte Répit -->
+    <div class="Halte_Repit text-center py-5">
+        <div id="Halte_Repit" class="container">
             <h2 id="titreP">Halte Répit :</h2>
-            <p id="textP">
-                Un moment d’accueil pour des personnes en situation de dépendance, cet espace permet aux aidés de
-                côtoyer d’autres personnes, de réaliser des activités afin de les rester éveillés à la vie
-                quotidienne.Cette action permet aux familles de vacquer à d’autres occupations pendant la réalisation de
-                cette activité.
-            </p>
+            <p id="textP">Un moment d’accueil pour des personnes en situation de dépendance, cet espace permet aux aidés de côtoyer d’autres personnes, de réaliser des activités afin de les maintenir éveillés à la vie quotidienne. Cette action permet aux familles de vacquer à d’autres occupations pendant la réalisation de cette activité.</p>
         </div>
     </div>
-    <div class="voir-plus">
-        <img src="Sans titre.png" alt="Voir plus" id="voir-plus">
+
+    <!-- Voir Plus -->
+    <div class="voir-plus text-center py-5">
+        <img src="images/Sans titre.png" alt="Voir plus" id="voir-plus" class="img-fluid">
     </div>
-    <footer class="bas-de-page">
-        <h2>Contact</h2>
-        <h2> Mention légales</h2>
-        <h2>CGU</h2>
-        <h2>Politique des protéctions des données personnelles</h2>
-        <h2>Politique de cookies</h2>
-        <h2>Préférences de cookies </h2>
+
+    <!-- Footer -->
+    <footer class="bas-de-page text-center py-4">
+        <div class="container">
+            <h5>Contact | Mention légales | CGU | Politique des protections des données personnelles | Politique de cookies | Préférences de cookies</h5>
+        </div>
     </footer>
+
+    <!-- Lien vers le script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
