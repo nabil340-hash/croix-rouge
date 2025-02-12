@@ -23,6 +23,9 @@
     display: flex;
     gap: 25px;
 }
+.boutonh{
+    border: none;
+}
 /*mise en avant*/
 .mise_en_avant{
     width: 100%;
