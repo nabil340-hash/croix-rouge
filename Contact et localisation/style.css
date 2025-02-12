@@ -1,0 +1,22 @@
+ /*tête de page*/
+ .tete_de_page{
+    display: flex;
+    flex-direction: row;
+    height: 76px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    background-color: #fff; 
+    z-index: 1000; 
+}
+#logocr{
+    height: 76px;
+    width: 292px;
+    object-fit: cover;
+}
+.bouton_tete_de_page{
+    display: flex;
+    gap: 25px;
+}
