@@ -88,4 +88,8 @@ body {
 .horaires .details {
     text-align: center; /* Centre aussi les horaires détaillés */
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 
