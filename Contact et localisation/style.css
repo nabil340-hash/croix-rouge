@@ -40,3 +40,52 @@
 #footer a:hover{
     color: red;
 }
+span{
+    color: red;
+}
+/*body*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.horaires {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 300px;
+}
+.status {
+    color: green;
+    font-weight: bold;
+}
+.toggle-button {
+    color: red;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+}
+.details {
+    display: none;
+    margin-top: 10px;
+}
+#AdreConHor {
+    display: flex; /* Active Flexbox */
+    justify-content: space-around; /* Espacement équilibré entre les div */
+    align-items: flex-start; /* Aligner les éléments en haut */
+    gap: 20px; /* Espacement entre les div */
+    flex-wrap: wrap; /* Permet le retour à la ligne sur petits écrans */
+}
+
+#Adress, #Contact, #horaires{
+    width: 15%;
+    border: 1px solid #ddd; /* Optionnel : ajoute une bordure */
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Optionnel : ajoute une ombre */
+}
+#Adress, #Contact, .horaires {
+    text-align: center; /* Centre le texte dans ces sections */
+}
+
+.horaires .details {
+    text-align: center; /* Centre aussi les horaires détaillés */
+}
+
