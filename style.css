@@ -23,9 +23,16 @@
     object-fit: cover;
 }
 
-.bouton_tete_de_page {
+.bouton_tete_de_page a {
     display: flex;
     gap: 25px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+.bouton_tete_de_page a:hover {
+    color: red;
 }
 
 .boutonh {
@@ -247,4 +254,13 @@
         flex-direction: column;
         gap: 10px;
     }
+}
+/*footer*/
+#footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#footer a:hover{
+    color: red;
 }
