@@ -32,7 +32,7 @@
     <br><br><br><br>
     <div class="d-flex justify-content-center">
         <h2>
-            Contact et localisation 
+            Contact et localisation
         </h2>
     </div>
     <div id="AdreConHor">
@@ -42,9 +42,11 @@
             </h2>
             <p>
                 4 rue Gambetta,<br>10100 Romilly Sur Seine <br>
-                <a href="https://www.google.com/maps?ll=48.514194,3.724994&z=15&t=m&hl=fr&gl=FR&mapclient=embed&cid=8227557104743417359"><span class="material-symbols-outlined">
-                    location_on
-                </span> Voir sur la carte</a>
+                <a
+                    href="https://www.google.com/maps?ll=48.514194,3.724994&z=15&t=m&hl=fr&gl=FR&mapclient=embed&cid=8227557104743417359"><span
+                        class="material-symbols-outlined">
+                        location_on
+                    </span> Voir sur la carte</a>
             </p>
         </div>
         <div id="Contact">
@@ -53,14 +55,53 @@
             </h2>
             <p>
                 <a href=""><span class="material-symbols-outlined">
-                    call
-                </span>03 25 21 65 86</a><br><a href=""><span class="material-symbols-outlined">
-                    call
-                </span>03 25 21 92 49</a><br><a href=""><span class="material-symbols-outlined">
-                    mail
-                </span> Contacter par mail</a>
+                        call
+                    </span>03 25 21 65 86</a><br><a href=""><span class="material-symbols-outlined">
+                        call
+                    </span>03 25 21 92 49</a><br><a id="openModal" href="#"> <span class=" material-symbols-outlined">
+                        mail
+                    </span> Contacter par mail</a>
             </p>
         </div>
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Nous contacter</h2>
+                <form>
+                    <label for="question">Ma question concerne *</label>
+                    <select id="question">
+                        <option>Je choisis</option>
+                        <option value="benevolat">Bénévolat</option>
+                        <option value="demande-aide">Demande d'aide</option>
+                        <option value="dons">Dons</option>
+                        <option value="formations">Formations</option>
+                        <option value="poste-secours">Poste de secours</option>
+                        <option value="autre">Autre demande</option>
+                    </select>
+
+                    <label for="nom">Nom *</label>
+                    <input type="text" id="nom" placeholder="ex : Duchamps" required>
+
+                    <label for="prenom">Prénom *</label>
+                    <input type="text" id="prenom" placeholder="ex : Jean" required>
+
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" placeholder="ex : nom@mail.com" required>
+
+                    <label for="telephone">Téléphone</label>
+                    <input type="text" id="telephone" placeholder="ex : 06 10 20 30 40">
+
+                    <label for="adresse">Code postal et ville *</label>
+                    <input type="text" id="adresse" placeholder="ex : 75010 Paris" required>
+
+                    <label for="message">Mon message *</label>
+                    <textarea id="message" placeholder="Mon message..." required></textarea>
+
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </div>
+
         <div class="horaires" id="horaires">
             <h2>Horaires :</h2>
             <p>13h30 - 17h30</p>
@@ -107,8 +148,22 @@
                     details.style.display = 'none';
                     toggleButton.textContent = "Plus d'horaires";
                 }
-            }
-        </script>    
+            };
+            document.getElementById("openModal").addEventListener("click", function () {
+                document.getElementById("contactModal").style.display = "block";
+            });
+
+            document.querySelector(".close").addEventListener("click", function () {
+                document.getElementById("contactModal").style.display = "none";
+            });
+
+            window.addEventListener("click", function (event) {
+                let modal = document.getElementById("contactModal");
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        </script>
 </body>
 
 </html>
